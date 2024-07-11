@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(E-commerce.jpg);
+    background-repeat: inherit;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.container h1{
+    color: bisque;
+}
+
+
+footer .container{
+    margin-top: 240px;
+    text-align: center;
+    color: #f4f4f4;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:darksalmon;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: darksalmon;
+}
+
+main {
+    padding: 20px 0;
+    color: bisque;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    max-height: 400px;
+    object-fit:cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.product p.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-details img {
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.product-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:bisque;
+}
+
+.product-details p {
+    margin-bottom: 15px;
+    color:bisque;
+}
+
+.product-details button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-details button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
